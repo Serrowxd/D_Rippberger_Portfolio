@@ -134,6 +134,7 @@ a {
 .contact_container {
   flex-direction: column;
   padding: 2rem;
+  margin-top: 10rem;
 }
 .contact_container h1 {
   font-size: 5rem;
