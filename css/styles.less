@@ -1,0 +1,115 @@
+// ***
+// Global
+// ***
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+div {
+  display: flex;
+}
+
+// ***
+// Mixins
+// ***
+
+// Colors
+
+// Breakpoints
+
+// ***
+// Header
+// ***
+
+.header {
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.head_left,
+.head_right {
+  width: 50%;
+  flex-direction: column;
+}
+
+.head_left {
+  h1 {
+    font-size: 6rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  a {
+    font-size: 3.5rem;
+  }
+
+  h3 {
+    font-size: 3.5rem;
+    margin-top: 3.5rem;
+  }
+
+  h2,
+  a {
+    padding-top: 1.5rem;
+  }
+}
+
+.head_right {
+  align-items: center;
+
+  h1 {
+    font-size: 8rem;
+  }
+
+  .button_col {
+    flex-direction: column;
+    padding: 2rem;
+
+    button {
+      font-size: 3.5rem;
+      padding: 0.5rem 2rem 0.5rem 2rem;
+      border-radius: 1rem;
+      margin: 1rem;
+      transition: 0.5s;
+
+      &:hover {
+        background-color: gray;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// ***
+// Projects
+// ***
+
+.projects_container {
+  width: 100%;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+
+  .project {
+    width: 55rem;
+    height: 35rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    background-color: lightgray;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: gray;
+      cursor: pointer;
+    }
+
+    h1 {
+      font-size: 4rem;
+      padding-top: 2rem;
+      justify-content: center;
+    }
+  }
+}
