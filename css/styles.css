@@ -4,6 +4,10 @@ html {
 div {
   display: flex;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .header {
   justify-content: space-between;
   padding: 2rem;
@@ -12,6 +16,13 @@ div {
 .head_right {
   width: 50%;
   flex-direction: column;
+}
+.head_email {
+  transition: 0.25s;
+}
+.head_email:hover {
+  color: red;
+  cursor: pointer;
 }
 .head_left h1 {
   font-size: 6rem;
@@ -72,4 +83,43 @@ div {
   font-size: 4rem;
   padding-top: 2rem;
   justify-content: center;
+}
+.project_section h1 {
+  font-size: 9rem;
+}
+.project_section button {
+  font-size: 5rem;
+  width: 35rem;
+  border-radius: 2rem;
+  margin-top: 5rem;
+  transition: 0.5s;
+}
+.project_section button:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+.project_section_container {
+  flex-direction: column;
+  padding: 2rem;
+}
+.project_section_container h1 {
+  align-self: center;
+  font-size: 5rem;
+}
+.project_section_container h2 {
+  font-size: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+}
+.project_section_container .project_photo {
+  align-self: center;
+  justify-content: center;
+  height: 35rem;
+  width: 100%;
+  margin-top: 1.5rem;
+  background-color: lightgray;
+}
+.project_section_container .project_photo h2 {
+  padding-top: 2rem;
+  font-size: 3rem;
 }
